@@ -1,0 +1,27 @@
+.Header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 20vh;
+    background-color:rgb(110, 84, 102);
+        
+}
+.Header h1{
+    font-size:50px;
+    color: red;
+    margin: 20px;
+    padding: 20px;
+    justify-content: center;
+
+}
+
+.Header h2{
+    font-size:30px;
+    color: blue;
+    margin: 20px;
+    padding: 20px;
+    justify-content: center;
+
+}
