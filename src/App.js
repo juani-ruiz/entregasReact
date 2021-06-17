@@ -1,47 +1,47 @@
 import React, { Component } from 'react'
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
-import UserCard from './components/UserCard/UserCard';
+import Item from './components/Item/Item';
 import ItemCount from './components/ItemCount/ItemCount';
-import Nav from './components/Menu/Menu';
-
+import ItemList from './components/ItemList/ItemList';
 
 class App extends Component {
   render() {
+    
     return (
-      <div>
+      <div>   
 
         <Header title={'Bienvenido'} subtitle={'A la tienda virtual'}/>  
         <div className="row product-section">
 
           <div className="col product-section">
-            <UserCard
+            <Item
             
-            img={'https://http2.mlstatic.com/D_NQ_NP_871565-MLA45740759361_042021-O.webp'}
+            pictureUrl={'https://http2.mlstatic.com/D_NQ_NP_871565-MLA45740759361_042021-O.webp'}
             title={'Venzo Fx7'}
-            product={'Bicicleta mtb/stunt'}
+            price={'100.000'}
             description={'Cuadro Fx7 naranja talle S'}
             
             /> 
           </div> 
 
           <div className="col product-section">
-            <UserCard 
+            <Item 
             
-            img={'https://http2.mlstatic.com/D_NQ_NP_790802-MLA41258952373_032020-O.webp'}
+            pictureUrl={'https://http2.mlstatic.com/D_NQ_NP_790802-MLA41258952373_032020-O.webp'}
             title={'Zenith ATC'}
-            product={'Bicicleta mtb/stunt'}
+            price={'68.000'}
             description={'Cuadro Zenith naranja talle L'}
             
             /> 
           </div> 
 
           <div className="col product-section">
-            <UserCard 
+            <Item 
             
-            img={'https://http2.mlstatic.com/D_NQ_NP_847201-MLA32884547437_112019-O.webp'}
+            pictureUrl={'https://http2.mlstatic.com/D_NQ_NP_847201-MLA32884547437_112019-O.webp'}
             title={'BMX FIT TRL'}
-            product={'Bicicleta bmx'}
+            price={'120.000'}
             description={'Cuadro bmx'}
             
             /> 
@@ -53,11 +53,9 @@ class App extends Component {
           
           <ItemCount />
           
-        </div>   
+        </div>
         
-       
-
-
+            <ItemList />
 
         <div>
 
